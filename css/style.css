@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');  /*le contenu */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*les titres */
+*{
+    font-family:'Roboto';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Montserrat';
+    font-weight:bold;
+}
+h1{
+    font-size:4rem;
+    margin-bottom:1rem; 
+}
+h2{
+    font-size:3.2rem;
+    margin-bottom:1rem; 
+}
+h3{
+    font-size:4rem;
+    margin-bottom:1rem; 
+}
+p,
+ul,
+ol,
+li,
+a,
+blockquote,
+figcaption,
+span
+table,
+tr,
+td,
+article,
+details,
+section,
+main{
+    font-family:"Roboto";
+    font-weight:400 /* REGULAR */
+}
+p{
+    font-size: 1rem;
+    line-height:1.3rem;
+}
+
+
+/* STRUCTURE ET POSITIONNEMENTS */
+
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+.row{
+    display:flex;
+}
+
+
+/* puis viennent les colonnes */
+.w-25{
+    width: 25%;
+}
+.w-33{
+    width:33.333333%
+}
+.w-50{
+    width:50%;
+}
+.w-66{
+    width:66.666666%;
+}
+.w-75{
+    width:75%;
+}
+.w-100{
+    width:100%;
+}
+
+
+
+.bord-arrondi{
+    border-radius:10px
+}
+
+
+/* Helpers */
+.text-center{
+    text-align:center;
+}
+.text-right{
+    text-align:right;
+}
+
+.roboto{
+    font-family: 'Roboto';
+}
+
+/*Header*/
+.header-background{
+    height:50%;
+}
+
+.menu{
+    background-color:rgb(255,255,255, .5);
+    display:flex;
+    justify-content: space-around;
+    position:absolute;
+    width:110%;
+}
+.header-menu{
+    display:flex;
+    color:gray;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    text-transform:uppercase;
+    font-size: 0.9rem;
+}
+.header-list{
+    padding-right: 2rem;
+}
+
+.logo{
+    height: 5rem;
+}
+
+.header-title{
+    text-transform:uppercase;
+    font-size:3rem;
+}
+.header-background-texte{
+    position: absolute;
+    z-index: 2;
+    top: 40rem;
+    left: 15rem;
+    color: white;
+}
+.btn-transparent{
+    color:white;
+    text-transform:uppercase;
+    border:solid 2px white;
+    background-color:transparent;
+    font-size:0.8rem;
+    margin-top: 1rem;;
+}
+
+/*SECTION PRODUCTS*/
+.produits{
+    text-transform:uppercase;
+    font-size:1rem;
+    position: absolute;
+    z-index: 2;
+    margin-top: 2rem;
+
+}
+
+/* Title on the HR*/
+.products-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.products-title::before, .products-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid lightgrey;
+}
+.products-title::before {
+    margin-right: 7em;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+.products-title::after {
+    margin-left: 7em;  
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+
+.produits{
+    margin-bottom:2rem;
+}
+/*end*/
+
+.board-title{
+    font-size: 0.8rem;
+    color: grey;
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+.board-price{
+    text-align: center;
+}
+
+/*SECTION REDWOOD-STAND */
+.redwood{
+    text-transform:uppercase;
+    font-size:1rem;
+    position: absolute;
+    z-index: 2;
+    margin-top: 2rem;
+
+}
+/* Title on the HR*/
+.redwood-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.redwood-title::before, .redwood-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid lightgrey;
+}
+.redwood-title::before {
+    margin-right: 17em;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+.redwood-title::after {
+    margin-left: 17em;  
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+
+.redwood{
+    margin-bottom:2rem;
+}
+/*end*/
+.redwood-text{
+    text-align: center;
+    color:grey;
+    font-size:0.8rem;
+}
+
+.badge-text{
+    display:flex;
+    color:black;
+    margin-top: 1.2rem;;
+}
+.badge-img{
+    height: 7rem;
+}
+
+.badge-content{
+    padding-left:1rem;
+}
+
+.badge-title{
+    font-size:1rem;
+    margin-top: 0.5rem;
+}
+.badge-description{
+    color:grey
+}
+
+/*SECTION DERNIERS ARTICLES */
+.dernier{
+    font-size:1rem;
+}
+.fa-angle-left, .fa-angle-right{
+    color:white;
+    width:1rem;
+    height:1rem;
+    text-align: center;
+}
+.fa-angle-left{
+    background-color: lightgrey;
+}
+.fa-angle-right{
+    background-color: grey;
+}
+
+.dernier-title{
+    font-size:0.7rem;
+    color:grey;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.dernier-view{
+    color:grey;
+    text-align: center;
+    font-size:0.8rem;
+    margin-bottom: 1rem;
+}
+.last-img{
+    width:16rem;
+}
+#last{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*FOOTER*/
+.footer-title{
+    font-size:0.8rem;
+    font-weight:bold;
+    margin-top: 1rem;
+}
+.footer-content{
+    color:grey;
+    font-size:0.7rem;
+}
